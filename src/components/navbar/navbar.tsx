@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import ActionButtons from "./action-buttons";
 import Logo from "./logo";

@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import {
   Sheet,
@@ -9,7 +11,7 @@ import {
 import { AlignJustify } from "lucide-react";
 import Link from "next/link";
 import { Button } from "../ui/button";
-import { SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
+import { SignInButton, SignedOut, UserButton } from "@clerk/nextjs";
 
 const ActionButtons = () => {
   return (
@@ -45,7 +47,7 @@ const ActionButtons = () => {
             </SignInButton>
           </SignedOut>
           <Button className="text-md bg-[#45684C] ">לתרומה</Button>
-          <div className="my-1">
+          <div className="mr-5 my-1">
             <UserButton />
           </div>
         </div>

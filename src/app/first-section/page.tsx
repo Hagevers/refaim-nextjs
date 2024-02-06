@@ -1,3 +1,5 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import React from "react";
 
@@ -25,8 +27,9 @@ const LandingSection = () => {
         text-transparent
         font-bold"
         >
-          אנו מזמינים אתכם להצטרף אלינו ולהיות חלק מהעמותה אשר מקדמת את בוגרי
-          היחידה, מסייעת להם להשתלב בחברה, מנציחה את גיבוריה שנפלו וכו
+          עמותת רפאים הוקמה ב2023- על מנת לקיים בית חם לבוגרי היחידה, לקיים
+          קהילה מקדמת ופעילה למען החברה הישראלית, לחזק את מורשת היחידה, לסייע
+          לחבריה בהכוונה לקבלת טיפול לנפגעי הנפש ולהנציח את נופליה.
         </p>
         <div className="flex gap-4 justify-center pt-10">
           <Button className="bg-[#45684C] text-white px-10 py-2 rounded-md text-lg font-bold">
@@ -36,10 +39,7 @@ const LandingSection = () => {
 
         <div className="pt-10">
           <video className="rounded-xl" autoPlay muted loop>
-            <source
-              src="/pexels-tima-miroshnichenko-6201055 (2160p).mp4"
-              type="video/mp4"
-            />
+            <source src="/refaim_video.mp4" type="video/mp4" />
           </video>
         </div>
       </div>
