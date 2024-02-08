@@ -96,7 +96,7 @@ export function NavigationBar() {
     <NavigationMenu>
       <NavigationMenuList className="rtl hidden md:flex md:space-x-4">
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="font-bold text-lg">
+          <NavigationMenuTrigger className="font-bold text-lg bg-transparent">
             העמותה
           </NavigationMenuTrigger>
           <NavigationMenuContent>
@@ -133,7 +133,7 @@ export function NavigationBar() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="font-bold text-lg">
+          <NavigationMenuTrigger className="font-bold text-lg bg-transparent">
             קישורים
           </NavigationMenuTrigger>
           <NavigationMenuContent>

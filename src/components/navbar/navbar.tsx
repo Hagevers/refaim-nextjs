@@ -6,7 +6,7 @@ import { NavigationBar } from "./navigation";
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between items-center border-b h-40 px-10">
+    <div className="flex justify-between items-center h-40 px-10">
       <Logo />
       <NavigationBar />
       <ActionButtons />
