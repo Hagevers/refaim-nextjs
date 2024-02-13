@@ -31,6 +31,12 @@ const LandingSection = () => {
           קהילה מקדמת ופעילה למען החברה הישראלית, לחזק את מורשת היחידה, לסייע
           לחבריה בהכוונה לקבלת טיפול לנפגעי הנפש ולהנציח את נופליה.
         </p>
+        <p className="text-lg md:text-xl md-10 bg-gradient-to-l from-black to-gray-400 bg-clip-text text-transparent font-bold">
+          עמותת בוגרי יחידת רפאים תהווה בית חם לבוגרי, לוחמי ומטה היחידה. ותקיים
+          קהילה מקדמת ותומכת אשר מתעלת את ההון האנושי הגלום בבוגרי היחידה
+          ובניסיונם הצבאי הייחודי לעידוד מנהיגות מובילה, קיום יוזמות ושיתופי
+          פעולה עסקיים ולעשייה משמעותית יחד למען החברה הישראלית.
+        </p>
         <div className="flex gap-4 justify-center pt-10">
           <Button className="bg-[#45684C] text-white px-10 py-2 rounded-md text-lg font-bold">
             לתרומה

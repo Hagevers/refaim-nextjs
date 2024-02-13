@@ -73,9 +73,14 @@
   body {
     @apply bg-background text-foreground;
     direction: rtl;
+    scroll-behavior: smooth;
   }
 }
 
 .rtl {
   direction: rtl;
+}
+
+.ltr {
+  direction: ltr;
 }
