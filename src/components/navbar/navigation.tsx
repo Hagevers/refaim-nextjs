@@ -11,6 +11,7 @@ import {
 import Link from "next/link";
 import Logo from "./logo";
 import { cn } from "@/lib/utils";
+import { SignedIn } from "@clerk/nextjs";
 
 const components: { title: string; description: string }[] = [
   {
@@ -120,15 +121,11 @@ export function NavigationBar() {
                   </a>
                 </NavigationMenuLink>
               </li>
-              <ListItem title="Introduction">
-                Re-usable components built using Radix UI and Tailwind CSS.
+              <ListItem title="תרומה לעמותה">
+                לתרומה לעמותה ולהתחיל להיות חלק במעגל החיים של היחידה
               </ListItem>
-              <ListItem title="Installation">
-                How to install dependencies and structure your app.
-              </ListItem>
-              <ListItem title="Typography">
-                Styles for headings, paragraphs, lists...etc
-              </ListItem>
+              <ListItem title="הצטרפות כחבר">להצטרפות כחבר עמותה</ListItem>
+              <ListItem title="מטרות העמותה">מטרות העמותה</ListItem>
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
@@ -146,11 +143,18 @@ export function NavigationBar() {
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
-        <NavigationMenuItem className="font-bold text-lg">
-          <Link href="/docs" legacyBehavior passHref>
+        <NavigationMenuItem className="font-bold text-lg hover:bg-white hover:bg-opacity-45 p-2 rounded-md">
+          <Link href="#contact" legacyBehavior passHref scroll={true}>
             <NavigationMenuLink>צור קשר</NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
+        <SignedIn>
+          <NavigationMenuItem className="font-bold text-lg hover:bg-white hover:bg-opacity-45 p-2 rounded-md">
+            <Link href="/profile" legacyBehavior passHref>
+              <NavigationMenuLink>איזור אישי</NavigationMenuLink>
+            </Link>
+          </NavigationMenuItem>
+        </SignedIn>
       </NavigationMenuList>
     </NavigationMenu>
   );

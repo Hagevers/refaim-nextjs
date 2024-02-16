@@ -38,7 +38,7 @@ const ActionButtons = () => {
         </Sheet>
       </div>
       <div>
-        <div className="hidden md:flex md:space-x-4">
+        <div className="hidden md:flex md:gap-4 md:justify-between md:items-center">
           <SignedOut>
             <SignInButton>
               <Button className="text-md" variant={"ghost"}>
@@ -47,7 +47,7 @@ const ActionButtons = () => {
             </SignInButton>
           </SignedOut>
           <Button className="text-md bg-[#45684C] ">לתרומה</Button>
-          <div className="mr-5 my-1">
+          <div className="my-1">
             <UserButton />
           </div>
         </div>
