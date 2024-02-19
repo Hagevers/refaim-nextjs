@@ -1,6 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 import React from "react";
 
 const LandingSection = () => {
@@ -38,9 +39,11 @@ const LandingSection = () => {
           פעולה עסקיים ולעשייה משמעותית יחד למען החברה הישראלית.
         </p>
         <div className="flex gap-4 justify-center pt-10">
-          <Button className="bg-[#45684C] text-white px-10 py-2 rounded-md text-lg font-bold">
-            לתרומה
-          </Button>
+          <Link href="/donation">
+            <Button className="bg-[#45684C] text-white px-10 py-2 rounded-md text-lg font-bold">
+              לתרומה
+            </Button>
+          </Link>
         </div>
 
         <div className="pt-10">

@@ -17,14 +17,13 @@ const DonationPage = () => {
     <div className="flex justify-center items-center min-h-screen">
       <Card className="w-[350px] ">
         <CardHeader>
-          <CardTitle>תרומה לעמותה</CardTitle>
+          <CardTitle>תרומה לעמותת רפאים</CardTitle>
           <CardDescription>
             תרומתכם תסייע לנו להמשיך בפעולות שלנו למען בוגרי היחידה
           </CardDescription>
         </CardHeader>
         <CardContent>
           {'כרגע ניתן לתרום רק לחשבון חו"ל, מצטערים על אי הנוחות.'}
-          {"למעבר לתרומה"}
         </CardContent>
         <CardFooter className="flex justify-between">
           <Link href="/">

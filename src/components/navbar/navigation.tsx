@@ -75,9 +75,11 @@ export function NavigationBar() {
                   </a>
                 </NavigationMenuLink>
               </li>
-              <ListItem title="תרומה לעמותה">
-                לתרומה לעמותה ולהתחיל להיות חלק במעגל החיים של היחידה
-              </ListItem>
+              <Link href="/donation">
+                <ListItem title="תרומה לעמותה">
+                  לתרומה לעמותה ולהתחיל להיות חלק במעגל החיים של היחידה
+                </ListItem>
+              </Link>
               <SignedOut>
                 <SignInButton>
                   <ListItem title="הצטרפות כחבר">להצטרפות כחבר עמותה</ListItem>

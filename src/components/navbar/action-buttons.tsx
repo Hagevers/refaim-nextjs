@@ -43,13 +43,14 @@ const ActionButtons = () => {
                       <Link href="/signup">להצטרפות לעמותה</Link>
                     </SignInButton>
                   </SignedOut>
-                  <Link href="/donate">
-                    <div className="flex gap-4 justify-center pt-10">
+
+                  <div className="flex gap-4 justify-center pt-10">
+                    <Link href="/donate">
                       <Button className="bg-[#45684C] text-white px-10 py-2 rounded-md text-lg font-bold">
                         לתרומה
                       </Button>
-                    </div>
-                  </Link>
+                    </Link>
+                  </div>
                 </div>
               </SheetDescription>
             </SheetHeader>
@@ -65,7 +66,9 @@ const ActionButtons = () => {
               </Button>
             </SignInButton>
           </SignedOut>
-          <Button className="text-md bg-[#45684C] ">לתרומה</Button>
+          <Link href="/donation">
+            <Button className="text-md bg-[#45684C] ">לתרומה</Button>
+          </Link>
           <div className="my-1">
             <UserButton />
           </div>

@@ -11,6 +11,7 @@ import Image from "next/image";
 import React from "react";
 import { boardData } from "./data";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const ThirdSection = () => {
   return (
@@ -43,9 +44,11 @@ const ThirdSection = () => {
         </Carousel>
       </div>
       <div className="flex gap-4 justify-center pt-10">
-        <Button className="bg-[#45684C] text-white px-10 py-2 rounded-md text-lg font-bold">
-          לתרומה
-        </Button>
+        <Link href="/donation">
+          <Button className="bg-[#45684C] text-white px-10 py-2 rounded-md text-lg font-bold">
+            לתרומה
+          </Button>
+        </Link>
       </div>
     </div>
   );
