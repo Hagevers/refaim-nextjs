@@ -8,7 +8,7 @@ const Logo = () => {
 
   return (
     <div className="flex items-center gap-4">
-      <Image src={"/refaim_badge.png"} alt="Logo" width={50} height={50} />
+      <Image src={"/new_logo.png"} alt="Logo" width={150} height={100} />
       {user && <p className="text-white text-lg">שלום, {user?.fullName}</p>}
     </div>
   );
