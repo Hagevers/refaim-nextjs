@@ -24,7 +24,7 @@ const ThirdSection = () => {
                 className="pl-2 md:pl-4 flex flex-col-reverse items-center md:flex-row md:justify-between md:items-end gap-10"
               >
                 <div className="flex flex-col justify-between gap-1">
-                  <p className="text-lg">{item.content}</p>
+                  <p className="text-lg rtl">{item.content}</p>
                   <h1 className="flex">{item.title}</h1>
                   <h1 className="flex font-bold">{item.name}</h1>
                 </div>
