@@ -33,6 +33,7 @@ const ActionButtons = () => {
                 <div className="flex flex-col space-y-4 items-start w-full text-lg text-black mt-10 rtl:items-end">
                   <Link href="/">דף הבית</Link>
                   <Link href="#contact">צור קשר</Link>
+                  <Link href="/outsideLinks">קישורים חיצוניים</Link>
                   <SignedIn>
                     <Link href="/profile">לאיזור האישי</Link>
                     <SignOutButton>להתנתק</SignOutButton>
