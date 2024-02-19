@@ -17,7 +17,10 @@ export default function RootLayout({
 }>) {
   return (
     <ClerkProvider>
-      <html lang="en" className="scroll-smooth">
+      <html lang="he" className="scroll-smooth">
+        <head>
+          <link rel="icon" href="/src/app/favicon.ico" sizes="any" />
+        </head>
         <body className={rubik.className}>{children}</body>
       </html>
     </ClerkProvider>

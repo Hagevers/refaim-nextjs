@@ -1,7 +1,14 @@
 "use client";
 
 import React from "react";
-import { Gift, GraduationCap, Heart } from "lucide-react";
+import {
+  BookMarked,
+  Clover,
+  HandHelping,
+  Handshake,
+  Heart,
+  Waypoints,
+} from "lucide-react";
 
 interface cardProps {
   alt: string;
@@ -15,7 +22,7 @@ const cards: cardProps[] = [
   {
     alt: "קהילת רפאים",
     name: "קהילת רפאים",
-    icon: <GraduationCap />,
+    icon: <Waypoints />,
     content:
       "קהילת בוגרי ובוגרות היחידה אשר תקיים בתוכה יצירת 'נטוורקינג', בקשות סיוע בכל תחום, יוזמות, משרות עבודה וכו'",
     description:
@@ -24,7 +31,7 @@ const cards: cardProps[] = [
   {
     alt: "הנצחת הנופלים",
     name: "הנצחת הנופלים",
-    icon: <Gift />,
+    icon: <Clover />,
     content:
       "ליווי ותמיכת המשפחות והנצחת גיבורינו אשר נפלו במגוון תוכניות רחב, למען מי שבזכותם אנו כאן",
     description:
@@ -33,7 +40,7 @@ const cards: cardProps[] = [
   {
     alt: "קידום אישי ופיתוח הבוגר",
     name: "קידום אישי ופיתוח הבוגר",
-    icon: <Heart />,
+    icon: <BookMarked />,
     content:
       "פרויקטים רבים שמטרתם להעשיר את סל המיומנויות של הבוגרים. כגון, תוכניות 'מנטורינג' בארץ ובחול, סדנאות התפתחות אישית ולימודי יזמות",
     description:
@@ -42,7 +49,7 @@ const cards: cardProps[] = [
   {
     alt: "ליווי ותמיכה בלוחמי היחידה הסדירה",
     name: "ליווי ותמיכה בלוחמי היחידה הסדירה",
-    icon: <Heart />,
+    icon: <Handshake />,
     content:
       "סדנאות שחרור, הרצאות, אירועים ופעילויות, סיוע לחיילים בודדים ועוד",
     description:
@@ -60,7 +67,7 @@ const cards: cardProps[] = [
   {
     alt: "'רפאים' למען החברה הישראלית",
     name: "'רפאים' למען החברה הישראלית",
-    icon: <Heart />,
+    icon: <HandHelping />,
     content:
       "מיזמי התנדבויות של בוגרי היחידה עמ לגלות מעורבות חברתית וסיוע לקהילה. שיפוץ בתי שורדי שואה, עידוד שירות משמעותי אצל נוער בסיכון, התנדבויות עם פגועי גוף ונפש מהשירות וכו'",
     description:

@@ -85,7 +85,7 @@ const Contact = () => {
                       מספר פלאפון
                     </h4>
                     <p className="text-base text-body-color dark:text-dark-6">
-                      (+62)81 414 257 9980
+                      (+972)50 225 4744
                     </p>
                   </div>
                 </div>
@@ -110,7 +110,7 @@ const Contact = () => {
                       כתובת אימייל
                     </h4>
                     <p className="text-base text-body-color dark:text-dark-6">
-                      info@yourdomain.com
+                      Aviv@refaim888.org
                     </p>
                   </div>
                 </div>

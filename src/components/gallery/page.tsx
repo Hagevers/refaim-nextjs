@@ -33,6 +33,9 @@ export function Gallery() {
                   {img.image}
                 </CardContent>
               </Card>
+              {/* <div className="md:hidden h-full flex items-center flex-grow aspect-square justify-center p-6">
+                {img.image}
+              </div> */}
             </div>
           </CarouselItem>
         ))}

@@ -10,6 +10,7 @@ import {
 import Image from "next/image";
 import React from "react";
 import { boardData } from "./data";
+import { Button } from "@/components/ui/button";
 
 const ThirdSection = () => {
   return (
@@ -40,6 +41,11 @@ const ThirdSection = () => {
           <CarouselPrevious className="text-black" />
           <CarouselNext className="text-black" />
         </Carousel>
+      </div>
+      <div className="flex gap-4 justify-center pt-10">
+        <Button className="bg-[#45684C] text-white px-10 py-2 rounded-md text-lg font-bold">
+          לתרומה
+        </Button>
       </div>
     </div>
   );

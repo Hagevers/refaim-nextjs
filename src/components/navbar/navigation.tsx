@@ -13,82 +13,36 @@ import Logo from "./logo";
 import { cn } from "@/lib/utils";
 import { SignedIn } from "@clerk/nextjs";
 
-const components: { title: string; description: string }[] = [
+const components: { title: string; description: string; link: string }[] = [
   {
-    title: "Home",
-    description: "Go to the home page",
+    title: "ויקיפדיה",
+    description: "עמוד היחידה בויקיפדיה",
+    link: "https://he.wikipedia.org/wiki/%D7%94%D7%99%D7%97%D7%99%D7%93%D7%94_%D7%94%D7%A8%D7%91-%D7%9E%D7%9E%D7%93%D7%99%D7%AA",
   },
   {
-    title: "About",
-    description: "Learn more about us",
+    title: "כתבה YNET",
+    description: "כתבה על הקמת היחידה",
+    link: "https://www.ynet.co.il/articles/0,7340,L-5496192,00.html",
   },
   {
-    title: "Contact",
-    description: "Get in touch",
+    title: 'כתבה באתר צה"ל',
+    description: 'כתבה על היחידה הרב מימדית באתר הרשמי של צה"ל',
+    link: "https://www.idf.il/%d7%9b%d7%aa%d7%91%d7%95%d7%aa-%d7%95%d7%a2%d7%93%d7%9b%d7%95%d7%a0%d7%99%d7%9d/2020/%d7%94%d7%99%d7%97%d7%99%d7%93%d7%94-%d7%94%d7%a8%d7%91-%d7%9e%d7%9e%d7%93%d7%99%d7%aa/",
   },
   {
-    title: "Blog",
-    description: "Read our blog",
+    title: "כתבה באתר ישראל היום",
+    description: "כתבה על היחידה בישארל היום",
+    link: "https://www.israelhayom.co.il/article/793027",
   },
   {
-    title: "Careers",
-    description: "Join our team",
+    title: "אתר רשמי היחידה הרב מימדית",
+    description: 'האתר הרשמי של צה"ל יחידה',
+    link: "https://www.idf.il/%d7%90%d7%aa%d7%a8%d7%99-%d7%99%d7%97%d7%99%d7%93%d7%95%d7%aa/%d7%94%d7%99%d7%97%d7%99%d7%93%d7%94-%d7%94%d7%a8%d7%91-%d7%9e%d7%99%d7%9e%d7%93%d7%99%d7%aa/%d7%9b%d7%9c-%d7%94%d7%9b%d7%aa%d7%91%d7%95%d7%aa/2022/%d7%a9%d7%a0%d7%94-%d7%9c%d7%94%d7%a7%d7%9e%d7%aa-%d7%94%d7%99%d7%97%d7%99%d7%93%d7%94-%d7%94%d7%a8%d7%91-%d7%9e%d7%9e%d7%93%d7%99%d7%aa/",
   },
   {
-    title: "Pricing",
-    description: "See our pricing",
-  },
-  {
-    title: "Login",
-    description: "Log in to your account",
-  },
-  {
-    title: "Sign Up",
-    description: "Create an account",
-  },
-  {
-    title: "Dashboard",
-    description: "Manage your account",
-  },
-  {
-    title: "Logout",
-    description: "Log out of your account",
-  },
-  {
-    title: "Settings",
-    description: "Manage your account settings",
-  },
-  {
-    title: "Profile",
-    description: "View your profile",
-  },
-  {
-    title: "Account",
-    description: "Manage your account",
-  },
-  {
-    title: "Admin",
-    description: "Manage the site",
-  },
-  {
-    title: "Support",
-    description: "Get help",
-  },
-  {
-    title: "Privacy",
-    description: "Read our privacy policy",
-  },
-  {
-    title: "Terms",
-    description: "Read our terms of service",
-  },
-  {
-    title: "Legal",
-    description: "Read our legal documents",
-  },
-  {
-    title: "FAQ",
-    description: "Read our frequently asked questions",
+    title: "כתבה באתר וואלה",
+    description: "כתבה באתר וואלה על היחידה",
+    link: "https://news.walla.co.il/item/3455388",
   },
 ];
 
@@ -136,7 +90,12 @@ export function NavigationBar() {
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
               {components.map((component) => (
-                <ListItem key={component.title} title={component.title}>
+                <ListItem
+                  key={component.title}
+                  title={component.title}
+                  href={component.link}
+                  target="_blank"
+                >
                   {component.description}
                 </ListItem>
               ))}
