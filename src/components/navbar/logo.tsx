@@ -8,7 +8,13 @@ const Logo = () => {
 
   return (
     <div className="flex items-center gap-4">
-      <Image src={"/new_logo.png"} alt="Logo" width={150} height={100} />
+      <Image
+        src={"/new_logo.png"}
+        alt="Logo"
+        width={150}
+        height={100}
+        className="sm:h-[65px] sm:w-[100px]"
+      />
       {user && <p className="text-white text-lg">שלום, {user?.fullName}</p>}
     </div>
   );
