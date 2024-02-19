@@ -86,7 +86,7 @@ const SecondSection = () => {
           flex  justify-center pb-10
         "
       > */}
-      <div className="flex-col items-center justify-center">
+      <div className="flex-col items-center justify-center" id="values">
         <div
           className="
                 text-3xl

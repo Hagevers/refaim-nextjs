@@ -11,7 +11,7 @@ import {
 import Link from "next/link";
 import Logo from "./logo";
 import { cn } from "@/lib/utils";
-import { SignedIn } from "@clerk/nextjs";
+import { SignInButton, SignedIn, SignedOut } from "@clerk/nextjs";
 
 const components: { title: string; description: string; link: string }[] = [
   {
@@ -78,8 +78,14 @@ export function NavigationBar() {
               <ListItem title="תרומה לעמותה">
                 לתרומה לעמותה ולהתחיל להיות חלק במעגל החיים של היחידה
               </ListItem>
-              <ListItem title="הצטרפות כחבר">להצטרפות כחבר עמותה</ListItem>
-              <ListItem title="מטרות העמותה">מטרות העמותה</ListItem>
+              <SignedOut>
+                <SignInButton>
+                  <ListItem title="הצטרפות כחבר">להצטרפות כחבר עמותה</ListItem>
+                </SignInButton>
+              </SignedOut>
+              <ListItem title="מטרות העמותה" href="#values">
+                מטרות העמותה
+              </ListItem>
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
