@@ -45,7 +45,7 @@ const ActionButtons = () => {
                   </SignedOut>
 
                   <div className="flex gap-4 justify-center pt-10">
-                    <Link href="/donate">
+                    <Link href="/donation">
                       <Button className="bg-[#45684C] text-white px-10 py-2 rounded-md text-lg font-bold">
                         לתרומה
                       </Button>
